@@ -1,0 +1,69 @@
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5; /* 背景色を淡いグレーに設定 */
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+  font-size: 2em;
+  margin-top: 20px;
+}
+
+p {
+  color: #555;
+  text-align: justify;
+  padding: 10px;
+  margin: 0 auto;
+  width: 80%; /* パラグラフの幅を調整 */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  background-color: #4caf50; /* 緑色の背景 */
+  color: white;
+  margin: 5px;
+  padding: 10px;
+  text-align: center;
+}
+
+ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  text-decoration: underline;
+}
+
+img {
+  border-radius: 10px;
+  transition: transform 0.2s ease-in-out;
+}
+
+img:hover {
+  transform: scale(1.1); /* 画像にマウスを乗せると少し拡大 */
+}
+
+a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #2980b9; /* リンクの色をホバーで変える */
+}
+
+img[alt="頑張ろう"] {
+  border: 2px solid #ffcc00;
+  padding: 5px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
