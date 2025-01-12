@@ -4,38 +4,79 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>詳細情報 | 焼肉 牛工大</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <img src="images/building_food_yakiniku.png" alt="焼肉 牛工大のロゴ" />
+    <header class="bg-dark text-white text-center py-3">
+      <img
+        src="images/building_food_yakiniku.png"
+        alt="焼肉 牛工大のロゴ"
+        class="img-fluid"
+      />
     </header>
-    <nav>
-      <ul>
-        <li><a href="index.html">ホーム</a></li>
-        <li><a href="menu.html">メニュー</a></li>
-        <li><a href="about.html">詳細情報</a></li>
-        <li><a href="#reserve">予約</a></li>
-        <li><a href="#access">アクセス</a></li>
-      </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">焼肉 牛工大</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">ホーム</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="menu.html">メニュー</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="about.html">詳細情報</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#reserve">予約</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#access">アクセス</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
-    <main>
-      <section id="about">
-        <h2>店舗情報</h2>
-        <img src="images/mise1.jpg" alt="店舗内部の写真" />
-        <p>
+    <main class="container my-5">
+      <section id="about" class="text-center">
+        <h2 class="mb-4">店舗情報</h2>
+        <img
+          src="images/mise1.jpg"
+          alt="店舗内部の写真"
+          class="img-fluid rounded mb-4"
+        />
+        <p class="lead">
           焼肉
           牛工大は、最高品質の肉を提供する焼肉レストランです。お客様に快適な時間を過ごしていただくために、洗練された空間と丁寧なサービスをご用意しています。
         </p>
-        <h3>炭火焼肉のこだわり</h3>
-        <p>当店では厳選された炭を使用し、肉本来の旨味を引き出します。</p>
-        <img src="images/sumi.jpg" alt="炭火の写真" />
+        <h3 class="my-4">炭火焼肉のこだわり</h3>
+        <p class="mb-4">
+          当店では厳選された炭を使用し、肉本来の旨味を引き出します。
+        </p>
+        <img src="images/sumi.jpg" alt="炭火の写真" class="img-fluid rounded" />
       </section>
     </main>
-    <footer>
+    <footer class="bg-dark text-white text-center py-3">
       <p>
         焼肉 牛工大 &copy; 2024 | 営業時間: 17:00～23:00 | Tel: 03-1234-5678
       </p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
