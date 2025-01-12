@@ -4,60 +4,97 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>メニュー | 焼肉 牛工大</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <img src="images/building_food_yakiniku.png" alt="焼肉 牛工大のロゴ" />
+    <header class="bg-dark text-white text-center py-3">
+      <img
+        src="images/building_food_yakiniku.png"
+        alt="焼肉 牛工大のロゴ"
+        class="img-fluid"
+      />
     </header>
-    <nav>
-      <ul>
-        <li><a href="index.html">ホーム</a></li>
-        <li><a href="menu.html">メニュー</a></li>
-        <li><a href="about.html">詳細情報</a></li>
-        <li><a href="#reserve">予約</a></li>
-        <li><a href="#access">アクセス</a></li>
-      </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">焼肉 牛工大</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">ホーム</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="menu.html">メニュー</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">詳細情報</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#reserve">予約</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#access">アクセス</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
-    <main>
+    <main class="container my-5">
       <section id="menu">
-        <h2>メニュー</h2>
-        <div class="menu-gallery">
-          <figure>
-            <img src="images/buta_horumon.jpg" alt="豚ホルモン" />
-            <figcaption>豚ホルモン</figcaption>
-          </figure>
-          <figure>
-            <img src="images/buta_tan.jpg" alt="豚タン" />
-            <figcaption>豚タン</figcaption>
-          </figure>
-          <figure>
-            <img src="images/harami.jpg" alt="ハラミ" />
-            <figcaption>ハラミ</figcaption>
-          </figure>
-          <figure>
-            <img src="images/karubi.jpg" alt="カルビ" />
-            <figcaption>カルビ</figcaption>
-          </figure>
-          <figure>
-            <img src="images/koudai_karubi.jpg" alt="厚切りカルビ" />
-            <figcaption>厚切りカルビ</figcaption>
-          </figure>
-          <figure>
-            <img src="images/tori_momo.jpg" alt="鶏もも" />
-            <figcaption>鶏もも</figcaption>
-          </figure>
-          <figure>
-            <img src="images/tori_yagen.jpg" alt="鶏軟骨" />
-            <figcaption>鶏軟骨</figcaption>
-          </figure>
+        <h2 class="mb-4 text-center">メニュー</h2>
+        <div class="row g-4">
+          <div class="col-md-4 text-center">
+            <figure>
+              <img
+                src="images/buta_horumon.jpg"
+                alt="豚ホルモン"
+                class="img-fluid rounded"
+              />
+              <figcaption class="mt-2">豚ホルモン</figcaption>
+            </figure>
+          </div>
+          <div class="col-md-4 text-center">
+            <figure>
+              <img
+                src="images/buta_tan.jpg"
+                alt="豚タン"
+                class="img-fluid rounded"
+              />
+              <figcaption class="mt-2">豚タン</figcaption>
+            </figure>
+          </div>
+          <div class="col-md-4 text-center">
+            <figure>
+              <img
+                src="images/harami.jpg"
+                alt="ハラミ"
+                class="img-fluid rounded"
+              />
+              <figcaption class="mt-2">ハラミ</figcaption>
+            </figure>
+          </div>
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="bg-dark text-white text-center py-3">
       <p>
         焼肉 牛工大 &copy; 2024 | 営業時間: 17:00～23:00 | Tel: 03-1234-5678
       </p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
